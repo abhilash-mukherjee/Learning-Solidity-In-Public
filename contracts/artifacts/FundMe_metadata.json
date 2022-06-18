@@ -11,6 +11,25 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ethValue",
+						"type": "uint256"
+					}
+				],
+				"name": "convertEthToDollars",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "favNumber",
 				"outputs": [
@@ -45,7 +64,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "getLatestPrice",
+				"name": "getDecimalsInReturnedValueByThePriceFeed",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLatestPriceOfEthInUSD",
 				"outputs": [
 					{
 						"internalType": "int256",
@@ -58,12 +90,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "latestPriceOfBTCinETH",
+				"name": "minimumUSDToSend",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -106,11 +138,11 @@
 			]
 		},
 		"contracts/FundMe.sol": {
-			"keccak256": "0x76ec196c337516b64373d9c8ea38a9fabdeb05dd2380675f2aabadbaae6338d3",
+			"keccak256": "0xd8ad2f5d726821c3189dcee60911612c99077f07b2bd12a593640109dae70316",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://83145cc7d2eb4028ffa2d24ae566464ed17a1a53d314690d6a7de6674c4b4fd7",
-				"dweb:/ipfs/Qmc6EA83XNMmRbK3xM6JivzRs8YduN25oGLEfsjkTcSKgQ"
+				"bzz-raw://d60fabbfa43e63715d70fe87c3919b10150327aa9d6afb2e356b0cda5779a9e1",
+				"dweb:/ipfs/QmQmmP3FGK7HgaPNdmAJQUPrR6mTHu129Fj4ChYM3mwJe5"
 			]
 		}
 	},
