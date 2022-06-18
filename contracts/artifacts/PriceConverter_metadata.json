@@ -6,13 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "favNumber",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ethValue",
+						"type": "uint256"
+					}
+				],
+				"name": "convertEthToDollars",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int256"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -20,19 +26,38 @@
 			},
 			{
 				"inputs": [],
-				"name": "fund",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "feedAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "minimumUSDToSend",
+				"name": "getDecimalsInReturnedValueByThePriceFeed",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLatestPriceOfEthInUSD",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -52,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FundMe.sol": "FundMe"
+			"contracts/PriceConverter.sol": "PriceConverter"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -72,14 +97,6 @@
 			"urls": [
 				"bzz-raw://6c1f59e0c7334c22fb54288728fc32546bdc9c8133d6db0d60223e3c28f52120",
 				"dweb:/ipfs/QmeuxawUVBhMWQJXaEhhnubCTc4Jwn5wYK8gbhq6NjrpfG"
-			]
-		},
-		"contracts/FundMe.sol": {
-			"keccak256": "0xa280c1181474f65f3810ec8585a2b3709b628d9eacd7c2b90c12cddbc058b1c1",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://a978b6894e3f08b07594db2d2ef07be2655eb0592d2013c5a369afc9f340cd6d",
-				"dweb:/ipfs/QmbSsU3LuwjKVpVrXTZidhwVfGo17mSccGQyZpyns5tZnU"
 			]
 		},
 		"contracts/PriceConverter.sol": {

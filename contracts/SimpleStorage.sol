@@ -20,3 +20,4 @@ contract SimpleStorage{
         people.push(People(_name,_favouriteNumber));
     }
 }
+
